@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "225426404137",
+    "project_id": "busrapidtransit-a0ef7",
+    "storage_bucket": "busrapidtransit-a0ef7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225426404137:android:689e067442dc23986fbd38",
+        "android_client_info": {
+          "package_name": "com.example.bus_rapid_transit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVPBbU6sB0K7DJe4YDv-0NSXJZI8k_CH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
