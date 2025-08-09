@@ -24,7 +24,10 @@ Future<Either<Failure, void>> resetPassword({
   }
   
   );
-  
+
+Future<bool> isLoggedIn();
+
+  // Add other methods as needed
 
  
 }
