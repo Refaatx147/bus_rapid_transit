@@ -9,12 +9,14 @@ environment:
 dependencies:
   cloud_firestore: ^6.0.0
   dartz: ^0.10.1
+  dropdown_button2: ^2.3.9
   firebase_auth: ^6.0.0
   firebase_core: ^4.0.0
   flutter:
     sdk: flutter
   flutter_screenutil: ^5.9.3
   internet_connection_checker: ^3.0.1
+  intl: ^0.20.2
   shared_preferences: ^2.5.3
 
 dev_dependencies:
@@ -24,6 +26,14 @@ dev_dependencies:
 
 flutter:
   fonts:
+    - family: Almarai
+      fonts:
+        - asset: assets/fonts/Almarai-Regular.ttf
+        - asset: assets/fonts/Almarai-Bold.ttf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
     - family: Lalezar
       fonts:
         - asset: assets/fonts/Lalezar-Regular.ttf
@@ -34,10 +44,16 @@ flutter:
     - assets/images/splash_images/BackgroundShape.png
     - assets/images/splash_images/halfBackgroundShape.png
     - assets/images/splash_images/MinistryLogoContainer.png
+    - assets/images/success_screen_images/confetti_component.png
+    - assets/images/success_screen_images/Frame.png
     - assets/images/tahrirSquare.png
     - assets/images/OverlayBackground.png
     - assets/fonts/Lalezar-Regular.ttf
     - assets/fonts/Cairo-SemiBold.ttf
+    - assets/fonts/Poppins-Regular.ttf
+    - assets/fonts/Poppins-Bold.ttf
     - assets/images/image.png
+    - assets/fonts/Almarai-Regular.ttf
+    - assets/fonts/Almarai-Bold.ttf
 
   uses-material-design: true

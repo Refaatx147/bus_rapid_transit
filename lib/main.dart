@@ -1,6 +1,8 @@
+
 import 'package:bus_rapid_transit/core/utils/responsive/screen_util_init/screen_util_init.dart';
 import 'package:bus_rapid_transit/features/auth/presentation/screens/login_screen.dart';
-import 'package:bus_rapid_transit/features/auth/presentation/screens/splash_screen.dart';
+import 'package:bus_rapid_transit/features/auth/presentation/screens/signup_screen.dart';
+import 'package:bus_rapid_transit/features/auth/presentation/screens/success_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +20,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: LoginScreen()
+        theme: ThemeData(
+    textSelectionTheme: TextSelectionThemeData(
+      cursorColor: Colors.white,
+      selectionColor: Colors.white.withAlpha(100),
+      selectionHandleColor: Colors.white,           
+    ),
+  ),
+
+      home: SuccessScreen(isRegisterSuccess: true,)
     );
   }
 }
