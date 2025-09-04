@@ -12,7 +12,7 @@ import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widget
 import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widgets/background_overlay.dart';
 import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widgets/custom_welcome_text.dart';
 import 'package:bus_rapid_transit/features/auth/presentation/widgets/custom_subtitle_text.dart';
-import 'package:bus_rapid_transit/features/auth/presentation/widgets/positioned_widget.dart';
+import 'package:bus_rapid_transit/core/utils/shared_widgets/positioned_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
