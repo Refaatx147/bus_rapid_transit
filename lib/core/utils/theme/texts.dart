@@ -44,8 +44,56 @@ static TextStyle? splashTextTitle = TextStyle(
     color: ConstColors.labelText,
     fontFamily: 'Poppins-Regular'
   );
+  static TextStyle? homeLabelText = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w400,
+    color: ConstColors.labelText,
+    fontFamily: 'Poppins'
+  );
+  static TextStyle? homeDash = TextStyle(
+    fontSize: 10.5.sp,
+    fontWeight: FontWeight.w400,
+    color: ConstColors.labelText.withAlpha(100),
+    fontFamily: 'Poppins'
+  );
+  static TextStyle? homeDateText = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    color: ConstColors.dropdownButtonColor,
+    fontFamily: 'Poppins'
+  );
+  static TextStyle? labelTextFawry = TextStyle(
+    fontSize: 13.5.sp,
+    fontWeight: FontWeight.w500,
+    color: ConstColors.dropdownButtonColor,
+    fontFamily: 'Poppins-Regular'
+  );
+  static TextStyle? ticketPriceText = TextStyle(
+    fontSize: 13.5.sp,
+    fontWeight: FontWeight.w500,
+    color: ConstColors.clickedButton,
+    fontFamily: 'Poppins'
+  );
+   static TextStyle? labelHomeText = TextStyle(
+    fontSize: 11.5.sp,
+    fontWeight: FontWeight.w400,
+    color: ConstColors.labelText,
+    fontFamily: 'Poppins-Regular'
+  );
+  static TextStyle? customLineText = TextStyle(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w600,
+    color: ConstColors.dropdownButtonColor,
+    fontFamily: 'Poppins'
+  );
   static TextStyle? labelCustom = TextStyle(
     fontSize: 13.5.sp,
+    fontWeight: FontWeight.w400,
+    color: ConstColors.mainText,
+    fontFamily: 'Poppins-Regular'
+  );
+   static TextStyle? labelCustomHome = TextStyle(
+    fontSize: 13.sp,
     fontWeight: FontWeight.w400,
     color: ConstColors.mainText,
     fontFamily: 'Poppins-Regular'
@@ -73,6 +121,36 @@ static TextStyle? clickedButton = TextStyle(
     fontSize: 12.5.sp,
     fontWeight: FontWeight.bold,
     color: ConstColors.mainText,
+    fontFamily: 'Poppins'
+  );
+  static TextStyle? titleHomeText = TextStyle(
+    fontSize: 14.5.sp,
+    fontWeight: FontWeight.bold,
+    color: ConstColors.mainText,
+    fontFamily: 'Poppins'
+  );
+  static TextStyle? lineLabelText = TextStyle(
+    fontSize: 10.5.sp,
+    fontWeight: FontWeight.w600,
+    color: ConstColors.labelLineNameColor,
+    fontFamily: 'Poppins'
+  );
+   static TextStyle? brtText = TextStyle(
+    fontSize: 11.5.sp,
+    fontWeight: FontWeight.w800,
+    color: ConstColors.homeButtonColor,
+    fontFamily: 'Coda'
+  );
+  static TextStyle? subBrtText = TextStyle(
+    fontSize: 9.sp,
+    fontWeight: FontWeight.w400,
+    color: ConstColors.homeButtonColor,
+    fontFamily: 'Coda'
+  );
+  static TextStyle? headHomeText = TextStyle(
+    fontSize: 11.5.sp,
+    fontWeight: FontWeight.w500,
+    color: ConstColors.mainText.withAlpha(170),
     fontFamily: 'Poppins'
   );
 static TextStyle? signButton = TextStyle(
@@ -109,6 +187,24 @@ static TextStyle? signButton = TextStyle(
     fontSize: 10.sp,
     fontWeight: FontWeight.w400,
     color: ConstColors.signButton,
+    fontFamily: 'Almarai'
+  );
+  static TextStyle? inputTextFieldLine = TextStyle(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.bold,
+    color: ConstColors.dropdownButtonColor,
+    fontFamily: 'Almarai'
+  );
+   static TextStyle? tripText = TextStyle(
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w800,
+    color: ConstColors.homeButtonColor,
+    fontFamily: 'Almarai'
+  );
+  static TextStyle? tripSecondText = TextStyle(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w800,
+    color: ConstColors.homeSecondButtonColor,
     fontFamily: 'Almarai'
   );
 }

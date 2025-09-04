@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   cloud_firestore: ^6.0.0
+  convex_bottom_bar: ^3.2.0
   dartz: ^0.10.1
   dropdown_button2: ^2.3.9
   firebase_auth: ^6.0.0
@@ -26,6 +27,10 @@ dev_dependencies:
 
 flutter:
   fonts:
+    - family: Coda
+      fonts:
+        - asset: assets\fonts\Coda-ExtraBold.ttf
+        - asset: assets\fonts\Coda-Regular.ttf
     - family: Almarai
       fonts:
         - asset: assets/fonts/Almarai-Regular.ttf
@@ -48,6 +53,10 @@ flutter:
     - assets/images/success_screen_images/Frame.png
     - assets/images/tahrirSquare.png
     - assets/images/OverlayBackground.png
+    - assets/images/home_screen_images/Rectangle146.png
+    - assets/images/home_screen_images/Rectangle147.png
+    - assets/images/home_screen_images/fawry.png
+    - assets\images\home_screen_images\rhombus.png
     - assets/fonts/Lalezar-Regular.ttf
     - assets/fonts/Cairo-SemiBold.ttf
     - assets/fonts/Poppins-Regular.ttf
@@ -55,5 +64,7 @@ flutter:
     - assets/images/image.png
     - assets/fonts/Almarai-Regular.ttf
     - assets/fonts/Almarai-Bold.ttf
+    - assets\fonts\Coda-Regular.ttf
+    - assets\fonts\Coda-ExtraBold.ttf
 
   uses-material-design: true

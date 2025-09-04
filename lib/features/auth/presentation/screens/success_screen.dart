@@ -6,7 +6,7 @@ import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widget
 import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widgets/postfix_appbar_icon.dart';
 import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widgets/prefix_appbar_icon.dart';
 import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widgets/background_overlay.dart';
-import 'package:bus_rapid_transit/features/auth/presentation/widgets/positioned_widget.dart';
+import 'package:bus_rapid_transit/core/utils/shared_widgets/positioned_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
