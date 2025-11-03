@@ -1,3 +1,4 @@
+import 'package:bus_rapid_transit/config/routes/navigation_service.dart';
 import 'package:bus_rapid_transit/core/utils/theme/colors.dart';
 import 'package:bus_rapid_transit/core/utils/theme/texts.dart';
 import 'package:bus_rapid_transit/features/home/presentation/widgets/custom_text_departure.dart';
@@ -6,24 +7,32 @@ import 'package:bus_rapid_transit/features/home/presentation/widgets/departure_w
 import 'package:bus_rapid_transit/features/home/presentation/widgets/line_name_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_it/get_it.dart';
 
 class TripCardWidget extends StatelessWidget {
-  const TripCardWidget({super.key, required this.firstLineName, required this.secondLineName, required this.distance, required this.date, required this.ticketPrice});
+   TripCardWidget({super.key, required this.firstLineName, required this.secondLineName, required this.distance, required this.date, required this.ticketPrice});
 final String firstLineName;
 final String secondLineName;
 final String distance;
 final String date;
 final String ticketPrice;
+
+final NavigationService _navigationGetIt = GetIt.instance<NavigationService>();
+
+ void _onViewDetailsPressed() {
+          _navigationGetIt.navigateTo('/ticketDetails');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 238.h,
+      height: 240.h,
       decoration: BoxDecoration(
         color: ConstColors.mainText,
         borderRadius: BorderRadius.circular(7.r),
         border: Border.all(color: ConstColors.labelText.withAlpha(30))
       ),
-      child:Padding(padding: EdgeInsets.only(left: 10.w,right: 10.w,top: 20.h,),child:  Column(
+      child:Padding(padding: EdgeInsets.only(left: 10.w,right: 10.w,top: 20.h),child:  Column(
 children: [
   Row(
     children: [
@@ -97,7 +106,7 @@ children: [
       Text('Ticket Price',style: TextsStyles.homeDash,),
     ],
   ),
-  InkWell(onTap: (){}, child: Text('View Details',style: TextStyle(color: ConstColors.departureColor,fontSize: 11.5.sp,fontFamily: 'Poppins'),))
+  InkWell(onTap: _onViewDetailsPressed, child: Text('View Details',style: TextStyle(color: ConstColors.departureColor,fontSize: 11.5.sp,fontFamily: 'Poppins'),))
 ],
 )
     

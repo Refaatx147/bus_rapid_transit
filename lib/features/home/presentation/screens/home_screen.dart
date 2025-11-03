@@ -1,3 +1,4 @@
+import 'package:bus_rapid_transit/config/routes/navigation_service.dart';
 import 'package:bus_rapid_transit/core/utils/shared_widgets/positioned_widget.dart';
 import 'package:bus_rapid_transit/core/utils/theme/colors.dart';
 import 'package:bus_rapid_transit/core/utils/theme/texts.dart';
@@ -14,6 +15,7 @@ import 'package:bus_rapid_transit/features/home/presentation/widgets/reservation
 import 'package:bus_rapid_transit/features/home/presentation/widgets/trip_card_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_it/get_it.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -25,6 +27,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final NavigationService _navigationGetIt = GetIt.instance<NavigationService>();
+ void _onShowAllPressed() {
+          _navigationGetIt.navigateTo('/ticketReservation');
+  }
   
 static const List<NavigationItem> _navigationItems = [
     NavigationItem(
@@ -46,6 +52,9 @@ static const List<NavigationItem> _navigationItems = [
   void onTapItem(int index) {
     setState(() {
       _selectedIndex = index;
+      if(index == 1) {
+        _navigationGetIt.navigateTo('/ticketDetails');
+      }
     });
   }
   @override
@@ -56,6 +65,7 @@ static const List<NavigationItem> _navigationItems = [
        navItems: _navigationItems,
        selectedIndex: _selectedIndex,
        onTapItem: onTapItem,
+
      ),
       backgroundColor: Color(0xffFFFFFF),
       body:  SingleChildScrollView(
@@ -246,7 +256,7 @@ FawryCustomWidget(),
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text('My Trips',style: TextsStyles.tripText,),
-          Text('Show All',style:TextsStyles.tripSecondText ,)
+          InkWell(onTap: _onShowAllPressed,child: Text('Show All',style:TextsStyles.tripSecondText ,),)
 
         ],
       ),

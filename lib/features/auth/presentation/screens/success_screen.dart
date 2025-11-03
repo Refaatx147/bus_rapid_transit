@@ -1,5 +1,6 @@
 // ignore_for_file: avoid_print
 
+import 'package:bus_rapid_transit/config/routes/navigation_service.dart';
 import 'package:bus_rapid_transit/core/utils/theme/texts.dart';
 import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widgets/background_widget.dart';
 import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widgets/clicked_button.dart';
@@ -9,13 +10,18 @@ import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widget
 import 'package:bus_rapid_transit/core/utils/shared_widgets/positioned_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_it/get_it.dart';
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key, required this.isRegisterSuccess});
+   SuccessScreen({super.key, required this.isRegisterSuccess});
 
 final bool isRegisterSuccess;
+final NavigationService _navigationGetIt = GetIt.instance<NavigationService>();
 
 
+ void _onGoPressed() {
+          _navigationGetIt.navigateTo('/home');
+  }
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -60,7 +66,7 @@ Text(isRegisterSuccess ?'Welcome! Your account has been successfully\nregistered
             bottom:isRegisterSuccess? 185.h:245.h,
             height: 50.h,
             width: MediaQuery.of(context).size.width,
-            child: ClickedButton(text: isRegisterSuccess ? 'Go to Login Page' : 'Go to Home Page',style: TextsStyles.clickedButton ,onPressed: (){},isRegisterSuccess: isRegisterSuccess,)
+            child: ClickedButton(text: isRegisterSuccess ? 'Go to Login Page' : 'Go to Home Page',style: TextsStyles.clickedButton ,onPressed: _onGoPressed,isRegisterSuccess: isRegisterSuccess,)
           ),
           
             
