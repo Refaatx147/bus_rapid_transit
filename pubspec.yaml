@@ -15,7 +15,9 @@ dependencies:
   firebase_core: ^4.0.0
   flutter:
     sdk: flutter
+  flutter_custom_clippers: ^2.1.0
   flutter_screenutil: ^5.9.3
+  get_it: ^8.2.0
   internet_connection_checker: ^3.0.1
   intl: ^0.20.2
   shared_preferences: ^2.5.3
@@ -45,6 +47,9 @@ flutter:
     - family: Cairo
       fonts:
         - asset: assets/fonts/Cairo-SemiBold.ttf
+    - family: inter
+      fonts:
+        - asset: assets/fonts/Inter_18pt-Bold.ttf
   assets:
     - assets/images/splash_images/BackgroundShape.png
     - assets/images/splash_images/halfBackgroundShape.png
@@ -56,7 +61,14 @@ flutter:
     - assets/images/home_screen_images/Rectangle146.png
     - assets/images/home_screen_images/Rectangle147.png
     - assets/images/home_screen_images/fawry.png
-    - assets\images\home_screen_images\rhombus.png
+    - assets/images/home_screen_images/rhombus.png
+    - assets/images/ticket_images/Ellipse6.png
+    - assets/images/ticket_images/Ellipse7.png
+    - assets/images/ticket_images/Ellipse8.png
+    - assets/images/ticket_images/Ellipse9.png
+    - assets/images/ticket_images/qrCode.png
+    - assets/images/ticket_images/number.png
+    - assets/images/ticket_images/arrows.png
     - assets/fonts/Lalezar-Regular.ttf
     - assets/fonts/Cairo-SemiBold.ttf
     - assets/fonts/Poppins-Regular.ttf
@@ -64,7 +76,8 @@ flutter:
     - assets/images/image.png
     - assets/fonts/Almarai-Regular.ttf
     - assets/fonts/Almarai-Bold.ttf
-    - assets\fonts\Coda-Regular.ttf
-    - assets\fonts\Coda-ExtraBold.ttf
+    - assets/fonts/Coda-Regular.ttf
+    - assets/fonts/Coda-ExtraBold.ttf
+    - assets/fonts/Inter_18pt-Bold.ttf
 
   uses-material-design: true

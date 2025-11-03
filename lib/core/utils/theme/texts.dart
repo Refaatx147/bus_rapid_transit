@@ -31,6 +31,12 @@ static TextStyle? splashTextTitle = TextStyle(
     color: ConstColors.mainText,
     fontFamily: 'Almarai'
   );
+  static TextStyle titleTicketText = TextStyle(
+    fontSize: 15.sp,
+    fontWeight: FontWeight.bold,
+    color: ConstColors.mainText,
+    fontFamily: 'Almarai'
+  );
   static TextStyle? subtitleLoginText = TextStyle(
     fontSize: 13.5.sp,
     fontWeight: FontWeight.w300,
@@ -153,6 +159,18 @@ static TextStyle? clickedButton = TextStyle(
     color: ConstColors.mainText.withAlpha(170),
     fontFamily: 'Poppins'
   );
+  static TextStyle? ticketTextOne = TextStyle(
+    fontSize: 8.sp,
+    fontWeight: FontWeight.bold,
+    color: ConstColors.swapButtonColor,
+    fontFamily: 'Poppins'
+  );
+  static TextStyle? ticketTextTwo = TextStyle(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w500,
+    color: ConstColors.swapButtonColor,
+    fontFamily: 'Poppins'
+  );
 static TextStyle? signButton = TextStyle(
     fontSize: 10.sp,
     fontWeight: FontWeight.bold,
@@ -189,6 +207,12 @@ static TextStyle? signButton = TextStyle(
     color: ConstColors.signButton,
     fontFamily: 'Almarai'
   );
+  static TextStyle? qrText = TextStyle(
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w400,
+    color: ConstColors.qrText.withAlpha(180),
+    fontFamily: 'Almarai'
+  );
   static TextStyle? inputTextFieldLine = TextStyle(
     fontSize: 10.sp,
     fontWeight: FontWeight.bold,
@@ -206,5 +230,17 @@ static TextStyle? signButton = TextStyle(
     fontWeight: FontWeight.w800,
     color: ConstColors.homeSecondButtonColor,
     fontFamily: 'Almarai'
+  );
+  static TextStyle? ticketInformationFirstText = TextStyle(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w700,
+    color: ConstColors.labelText,
+    fontFamily: 'Inter'
+  );
+  static TextStyle? ticketInformationSecondText = TextStyle(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w300,
+    color: ConstColors.swapButtonColor,
+    fontFamily: 'Inter'
   );
 }

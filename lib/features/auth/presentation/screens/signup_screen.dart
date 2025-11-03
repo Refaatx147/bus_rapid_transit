@@ -1,5 +1,7 @@
 // ignore_for_file: avoid_print
 
+import 'package:bus_rapid_transit/config/routes/app_arguments.dart';
+import 'package:bus_rapid_transit/config/routes/navigation_service.dart' show NavigationService;
 import 'package:flutter/material.dart';
 import 'package:bus_rapid_transit/core/utils/theme/texts.dart';
 import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widgets/background_widget.dart';
@@ -13,17 +15,22 @@ import 'package:bus_rapid_transit/features/auth/presentation/widgets/auth_widget
 import 'package:bus_rapid_transit/features/auth/presentation/widgets/custom_subtitle_text.dart';
 import 'package:bus_rapid_transit/core/utils/shared_widgets/positioned_widget.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_it/get_it.dart';
 class SignupScreen extends StatelessWidget {
-   SignupScreen({super.key});
+   SignupScreen({super.key, AuthArguments? arguments});
+final NavigationService _navigationGetIt = GetIt.instance<NavigationService>();
 
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
- void _onRegisterPressed() {
+void _onRegisterPressed() {
     if (_formKey.currentState!.validate()) {
-      print("Form is valid ✅");
+      _navigationGetIt.navigateTo('/doneRegister');
     } else {
       print("Form is invalid ❌");
     }
+  }
+  void _onLoginPressed() {
+          _navigationGetIt.navigateTo('/login');
   }
 
   @override
@@ -72,9 +79,7 @@ CustomSubtitleText(text: 'Enter your basic information to join us',style: TextsS
               bottom: 5.h,
               height: 50.h,
               width: 215.w,
-              child: SignButton(meaningText: 'Already have an account?', buttonText: 'Log in now', onPressed: () {
-
-              })
+              child: SignButton(meaningText: 'Already have an account?', buttonText: 'Log in now', onPressed: _onLoginPressed,)
             ),
 
         ]
