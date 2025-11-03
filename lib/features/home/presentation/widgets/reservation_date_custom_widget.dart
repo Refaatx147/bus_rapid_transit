@@ -15,6 +15,7 @@ class _ReserveDatePickerFieldState extends State<ReserveDatePickerField> {
   DateTime? selectedDate;
   final TextEditingController _dateController = TextEditingController();
   final FocusNode _dateFocusNode = FocusNode();
+  // ignore: unused_field
   bool _isDateFocused = false;
 
   @override

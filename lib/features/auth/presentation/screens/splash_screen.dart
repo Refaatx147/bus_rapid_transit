@@ -2,11 +2,13 @@
 
 
 
+import 'package:bus_rapid_transit/config/routes/navigation_service.dart';
 import 'package:bus_rapid_transit/core/utils/theme/colors.dart';
 import 'package:bus_rapid_transit/core/utils/theme/texts.dart';
 import 'package:bus_rapid_transit/core/utils/shared_widgets/positioned_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_it/get_it.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -22,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, '/login');
+      GetIt.instance<NavigationService>().navigateAndRemoveUntil('/login');
     });
   }
 
